@@ -9,7 +9,7 @@
 
 ## Abstract
 
-One immediate drawback of DDPM is its slow sampling process, typically requiring hundreds of denoising steps that can take several minutes, compared to existing techniques like VAEs and GANs. Another interesting direction we have not explored yet is conditional generation. For instance, a user might want to generate images of a specific animal species after training the model on a dataset containing multiple animal classes. We have also implemented the de facto standard technique for improving sample fidelity at the expense of sample diversity.
+One immediate drawback of DDPM is its slow sampling process, typically requiring hundreds of denoising steps that can take several minutes, compared to existing techniques like VAEs and GANs. By doing this, we have improved the speed of generation 20 times. Another interesting direction we have not explored yet is conditional generation. For instance, a user might want to generate images of a specific animal species after training the model on a dataset containing multiple animal classes. We have also implemented the de facto standard technique for improving sample fidelity at the expense of sample diversity.
 
 Here, I have implemented Denoising Diffusion Implicit Models (DDIMs), a different class of diffusion models that dramatically reduces sampling time without requiring us to retrain our DDPMs from scratch. Additionally, I have implemented the Classifier-Free Guidance (CFG), which can enhance the performance of diffusion models in conditional generation setups by modifying only a few lines of code.
 
